@@ -18,6 +18,10 @@
 		D2BB3BF61F0A7FDA008234C0 /* LLTableTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BB3BF51F0A7FDA008234C0 /* LLTableTool.m */; };
 		D2BB3BF91F0A802E008234C0 /* LLSqliteModelTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BB3BF81F0A802E008234C0 /* LLSqliteModelTool.m */; };
 		D2BB3BFC1F0A81E2008234C0 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D2BB3BFB1F0A81E2008234C0 /* libsqlite3.0.tbd */; };
+		D2BB3C001F0A842B008234C0 /* NSString+LLDownLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BB3BFF1F0A842B008234C0 /* NSString+LLDownLoader.m */; };
+		D2BB3C031F0A8498008234C0 /* LLDownLoaderFileTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BB3C021F0A8498008234C0 /* LLDownLoaderFileTool.m */; };
+		D2BB3C061F0A84E1008234C0 /* LLDownLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BB3C051F0A84E1008234C0 /* LLDownLoader.m */; };
+		D2BB3C091F0A8629008234C0 /* LLDownLoadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BB3C081F0A8629008234C0 /* LLDownLoadManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +44,14 @@
 		D2BB3BF71F0A802E008234C0 /* LLSqliteModelTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLSqliteModelTool.h; sourceTree = "<group>"; };
 		D2BB3BF81F0A802E008234C0 /* LLSqliteModelTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLSqliteModelTool.m; sourceTree = "<group>"; };
 		D2BB3BFB1F0A81E2008234C0 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		D2BB3BFE1F0A842B008234C0 /* NSString+LLDownLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+LLDownLoader.h"; sourceTree = "<group>"; };
+		D2BB3BFF1F0A842B008234C0 /* NSString+LLDownLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+LLDownLoader.m"; sourceTree = "<group>"; };
+		D2BB3C011F0A8498008234C0 /* LLDownLoaderFileTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLDownLoaderFileTool.h; sourceTree = "<group>"; };
+		D2BB3C021F0A8498008234C0 /* LLDownLoaderFileTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLDownLoaderFileTool.m; sourceTree = "<group>"; };
+		D2BB3C041F0A84E1008234C0 /* LLDownLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLDownLoader.h; sourceTree = "<group>"; };
+		D2BB3C051F0A84E1008234C0 /* LLDownLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLDownLoader.m; sourceTree = "<group>"; };
+		D2BB3C071F0A8629008234C0 /* LLDownLoadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLDownLoadManager.h; sourceTree = "<group>"; };
+		D2BB3C081F0A8629008234C0 /* LLDownLoadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLDownLoadManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +94,7 @@
 				D2BB3BE21F0A7B3D008234C0 /* Assets.xcassets */,
 				D2BB3BE41F0A7B3D008234C0 /* LaunchScreen.storyboard */,
 				D2BB3BE71F0A7B3D008234C0 /* Info.plist */,
+				D2BB3BFD1F0A83E8008234C0 /* LLDownLoadLib */,
 				D2BB3BED1F0A7E48008234C0 /* LLSqliteLib */,
 				D2BB3BD61F0A7B3D008234C0 /* Supporting Files */,
 			);
@@ -119,6 +132,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D2BB3BFD1F0A83E8008234C0 /* LLDownLoadLib */ = {
+			isa = PBXGroup;
+			children = (
+				D2BB3BFE1F0A842B008234C0 /* NSString+LLDownLoader.h */,
+				D2BB3BFF1F0A842B008234C0 /* NSString+LLDownLoader.m */,
+				D2BB3C041F0A84E1008234C0 /* LLDownLoader.h */,
+				D2BB3C051F0A84E1008234C0 /* LLDownLoader.m */,
+				D2BB3C011F0A8498008234C0 /* LLDownLoaderFileTool.h */,
+				D2BB3C021F0A8498008234C0 /* LLDownLoaderFileTool.m */,
+				D2BB3C071F0A8629008234C0 /* LLDownLoadManager.h */,
+				D2BB3C081F0A8629008234C0 /* LLDownLoadManager.m */,
+			);
+			path = LLDownLoadLib;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,6 +178,7 @@
 				TargetAttributes = {
 					D2BB3BD21F0A7B3D008234C0 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 5KVUAK8MDB;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -193,7 +222,11 @@
 				D2BB3BDE1F0A7B3D008234C0 /* ViewController.m in Sources */,
 				D2BB3BDB1F0A7B3D008234C0 /* AppDelegate.m in Sources */,
 				D2BB3BD81F0A7B3D008234C0 /* main.m in Sources */,
+				D2BB3C031F0A8498008234C0 /* LLDownLoaderFileTool.m in Sources */,
+				D2BB3C061F0A84E1008234C0 /* LLDownLoader.m in Sources */,
+				D2BB3C091F0A8629008234C0 /* LLDownLoadManager.m in Sources */,
 				D2BB3BF31F0A7F2D008234C0 /* LLSqliteTool.m in Sources */,
+				D2BB3C001F0A842B008234C0 /* NSString+LLDownLoader.m in Sources */,
 				D2BB3BF91F0A802E008234C0 /* LLSqliteModelTool.m in Sources */,
 				D2BB3BF61F0A7FDA008234C0 /* LLTableTool.m in Sources */,
 				D2BB3BF01F0A7E8C008234C0 /* LLModelTool.m in Sources */,
@@ -316,6 +349,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5KVUAK8MDB;
 				INFOPLIST_FILE = LLXMLY/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = liushaohua.LLXMLY;
@@ -327,6 +361,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5KVUAK8MDB;
 				INFOPLIST_FILE = LLXMLY/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = liushaohua.LLXMLY;
