@@ -22,6 +22,11 @@
 		D2BB3C031F0A8498008234C0 /* LLDownLoaderFileTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BB3C021F0A8498008234C0 /* LLDownLoaderFileTool.m */; };
 		D2BB3C061F0A84E1008234C0 /* LLDownLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BB3C051F0A84E1008234C0 /* LLDownLoader.m */; };
 		D2BB3C091F0A8629008234C0 /* LLDownLoadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BB3C081F0A8629008234C0 /* LLDownLoadManager.m */; };
+		D2BB3C0D1F0A883E008234C0 /* NSURL+LLAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BB3C0C1F0A883E008234C0 /* NSURL+LLAudio.m */; };
+		D2BB3C101F0A89D9008234C0 /* LLAudioDownLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BB3C0F1F0A89D9008234C0 /* LLAudioDownLoader.m */; };
+		D2BB3C131F0A89FB008234C0 /* LLAudioFileTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BB3C121F0A89FB008234C0 /* LLAudioFileTool.m */; };
+		D2BB3C161F0A8B1B008234C0 /* LLResourceLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BB3C151F0A8B1B008234C0 /* LLResourceLoader.m */; };
+		D2BB3C191F0A8BC6008234C0 /* LLRemotePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BB3C181F0A8BC6008234C0 /* LLRemotePlayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +57,16 @@
 		D2BB3C051F0A84E1008234C0 /* LLDownLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLDownLoader.m; sourceTree = "<group>"; };
 		D2BB3C071F0A8629008234C0 /* LLDownLoadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLDownLoadManager.h; sourceTree = "<group>"; };
 		D2BB3C081F0A8629008234C0 /* LLDownLoadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLDownLoadManager.m; sourceTree = "<group>"; };
+		D2BB3C0B1F0A883E008234C0 /* NSURL+LLAudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+LLAudio.h"; sourceTree = "<group>"; };
+		D2BB3C0C1F0A883E008234C0 /* NSURL+LLAudio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+LLAudio.m"; sourceTree = "<group>"; };
+		D2BB3C0E1F0A89D9008234C0 /* LLAudioDownLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLAudioDownLoader.h; sourceTree = "<group>"; };
+		D2BB3C0F1F0A89D9008234C0 /* LLAudioDownLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLAudioDownLoader.m; sourceTree = "<group>"; };
+		D2BB3C111F0A89FB008234C0 /* LLAudioFileTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLAudioFileTool.h; sourceTree = "<group>"; };
+		D2BB3C121F0A89FB008234C0 /* LLAudioFileTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLAudioFileTool.m; sourceTree = "<group>"; };
+		D2BB3C141F0A8B1B008234C0 /* LLResourceLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLResourceLoader.h; sourceTree = "<group>"; };
+		D2BB3C151F0A8B1B008234C0 /* LLResourceLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLResourceLoader.m; sourceTree = "<group>"; };
+		D2BB3C171F0A8BC6008234C0 /* LLRemotePlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLRemotePlayer.h; sourceTree = "<group>"; };
+		D2BB3C181F0A8BC6008234C0 /* LLRemotePlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLRemotePlayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +109,7 @@
 				D2BB3BE21F0A7B3D008234C0 /* Assets.xcassets */,
 				D2BB3BE41F0A7B3D008234C0 /* LaunchScreen.storyboard */,
 				D2BB3BE71F0A7B3D008234C0 /* Info.plist */,
+				D2BB3C0A1F0A880B008234C0 /* LLRemotePlayer */,
 				D2BB3BFD1F0A83E8008234C0 /* LLDownLoadLib */,
 				D2BB3BED1F0A7E48008234C0 /* LLSqliteLib */,
 				D2BB3BD61F0A7B3D008234C0 /* Supporting Files */,
@@ -145,6 +161,23 @@
 				D2BB3C081F0A8629008234C0 /* LLDownLoadManager.m */,
 			);
 			path = LLDownLoadLib;
+			sourceTree = "<group>";
+		};
+		D2BB3C0A1F0A880B008234C0 /* LLRemotePlayer */ = {
+			isa = PBXGroup;
+			children = (
+				D2BB3C0B1F0A883E008234C0 /* NSURL+LLAudio.h */,
+				D2BB3C0C1F0A883E008234C0 /* NSURL+LLAudio.m */,
+				D2BB3C0E1F0A89D9008234C0 /* LLAudioDownLoader.h */,
+				D2BB3C0F1F0A89D9008234C0 /* LLAudioDownLoader.m */,
+				D2BB3C111F0A89FB008234C0 /* LLAudioFileTool.h */,
+				D2BB3C121F0A89FB008234C0 /* LLAudioFileTool.m */,
+				D2BB3C171F0A8BC6008234C0 /* LLRemotePlayer.h */,
+				D2BB3C181F0A8BC6008234C0 /* LLRemotePlayer.m */,
+				D2BB3C141F0A8B1B008234C0 /* LLResourceLoader.h */,
+				D2BB3C151F0A8B1B008234C0 /* LLResourceLoader.m */,
+			);
+			path = LLRemotePlayer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,10 +258,15 @@
 				D2BB3C031F0A8498008234C0 /* LLDownLoaderFileTool.m in Sources */,
 				D2BB3C061F0A84E1008234C0 /* LLDownLoader.m in Sources */,
 				D2BB3C091F0A8629008234C0 /* LLDownLoadManager.m in Sources */,
+				D2BB3C101F0A89D9008234C0 /* LLAudioDownLoader.m in Sources */,
 				D2BB3BF31F0A7F2D008234C0 /* LLSqliteTool.m in Sources */,
+				D2BB3C0D1F0A883E008234C0 /* NSURL+LLAudio.m in Sources */,
 				D2BB3C001F0A842B008234C0 /* NSString+LLDownLoader.m in Sources */,
 				D2BB3BF91F0A802E008234C0 /* LLSqliteModelTool.m in Sources */,
+				D2BB3C161F0A8B1B008234C0 /* LLResourceLoader.m in Sources */,
+				D2BB3C191F0A8BC6008234C0 /* LLRemotePlayer.m in Sources */,
 				D2BB3BF61F0A7FDA008234C0 /* LLTableTool.m in Sources */,
+				D2BB3C131F0A89FB008234C0 /* LLAudioFileTool.m in Sources */,
 				D2BB3BF01F0A7E8C008234C0 /* LLModelTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
