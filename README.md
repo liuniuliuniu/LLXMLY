@@ -1,8 +1,10 @@
 # LLXMLY
-高仿喜马拉雅下载听模块 
+
+####高仿喜马拉雅下载听模块 (后续会持续更新)
+
 您的点赞就是我努力的动力 谢谢😁
 
-
+![LLXMLY.GIF](https://github.com/liuniuliuniu/LLXMLY/blob/master/LLXMLY.gif)
 
 
 ## <a id="function"></a>实现功能
