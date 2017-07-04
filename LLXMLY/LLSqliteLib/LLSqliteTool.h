@@ -15,8 +15,9 @@
 
 + (BOOL)dealSqls: (NSArray <NSString *>*)sqls withUID: (NSString *)uid;
 
-+ (NSArray <NSDictionary *>*)querySql: (NSString *)sql withUID: (NSString *)uid;
 
+
++ (NSArray <NSDictionary *>*)querySql: (NSString *)sql withUID: (NSString *)uid;
 
 
 @end

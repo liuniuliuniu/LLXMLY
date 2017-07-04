@@ -109,6 +109,7 @@
         
         __strong typeof(weakSelf.voiceM) strongVoiceM = weakSelf.voiceM;
         [[LLDownLoadManager shareInstance] downLoadWithURL:[self playOrDownLoadURL] downLoadInfo:^(long long fileSize) {
+            
             strongVoiceM.totalSize = fileSize;
             [LLSqliteModelTool saveModel:strongVoiceM uid:nil];
             

@@ -27,7 +27,6 @@
 		D2BB3C131F0A89FB008234C0 /* LLAudioFileTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BB3C121F0A89FB008234C0 /* LLAudioFileTool.m */; };
 		D2BB3C161F0A8B1B008234C0 /* LLResourceLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BB3C151F0A8B1B008234C0 /* LLResourceLoader.m */; };
 		D2BB3C191F0A8BC6008234C0 /* LLRemotePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BB3C181F0A8BC6008234C0 /* LLRemotePlayer.m */; };
-		D2BB3C1F1F0A988F008234C0 /* LLSubscribeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BB3C1E1F0A988F008234C0 /* LLSubscribeViewController.m */; };
 		D2BB3C4D1F0B3054008234C0 /* LLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BB3C421F0B3054008234C0 /* LLNavigationController.m */; };
 		D2BB3C4E1F0B3054008234C0 /* LLTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BB3C441F0B3054008234C0 /* LLTabBarController.m */; };
 		D2BB3C4F1F0B3054008234C0 /* LLMiddleView.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BB3C471F0B3054008234C0 /* LLMiddleView.m */; };
@@ -85,8 +84,6 @@
 		D2BB3C151F0A8B1B008234C0 /* LLResourceLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLResourceLoader.m; sourceTree = "<group>"; };
 		D2BB3C171F0A8BC6008234C0 /* LLRemotePlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLRemotePlayer.h; sourceTree = "<group>"; };
 		D2BB3C181F0A8BC6008234C0 /* LLRemotePlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLRemotePlayer.m; sourceTree = "<group>"; };
-		D2BB3C1D1F0A988F008234C0 /* LLSubscribeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLSubscribeViewController.h; sourceTree = "<group>"; };
-		D2BB3C1E1F0A988F008234C0 /* LLSubscribeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLSubscribeViewController.m; sourceTree = "<group>"; };
 		D2BB3C411F0B3054008234C0 /* LLNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLNavigationController.h; sourceTree = "<group>"; };
 		D2BB3C421F0B3054008234C0 /* LLNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLNavigationController.m; sourceTree = "<group>"; };
 		D2BB3C431F0B3054008234C0 /* LLTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLTabBarController.h; sourceTree = "<group>"; };
@@ -164,8 +161,6 @@
 			isa = PBXGroup;
 			children = (
 				D2BB3C3E1F0B3054008234C0 /* Classes */,
-				D2BB3C1D1F0A988F008234C0 /* LLSubscribeViewController.h */,
-				D2BB3C1E1F0A988F008234C0 /* LLSubscribeViewController.m */,
 				D2BB3C0A1F0A880B008234C0 /* LLRemotePlayer */,
 				D2BB3BFD1F0A83E8008234C0 /* LLDownLoadLib */,
 				D2BB3BED1F0A7E48008234C0 /* LLSqliteLib */,
@@ -503,7 +498,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2BB3C1F1F0A988F008234C0 /* LLSubscribeViewController.m in Sources */,
 				D2BB3C521F0B3054008234C0 /* LLTabBar.m in Sources */,
 				D2BB3C6A1F0B3CCE008234C0 /* LLDownLoadVoiceModel.m in Sources */,
 				D2BB3C581F0B3887008234C0 /* UIView+Category.m in Sources */,

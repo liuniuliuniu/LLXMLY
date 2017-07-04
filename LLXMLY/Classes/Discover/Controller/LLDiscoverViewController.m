@@ -7,7 +7,6 @@
 //
 
 #import "LLDiscoverViewController.h"
-#import "LLSubscribeViewController.h"
 #import "LLSegmentBarVC.h"
 
 #import "LLDownLoadVoiceListTVC.h"
@@ -46,22 +45,6 @@
     }];
     
 }
-
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    //
-    static BOOL isPlay = NO;
-    isPlay = !isPlay;
-    
-    [[NSNotificationCenter defaultCenter]postNotificationName:@"playState" object:@(isPlay)];
-    UIImage *image = [UIImage imageNamed:@"LL_Icon"];
-    
-    [[NSNotificationCenter defaultCenter]postNotificationName:@"playImage" object:image];
-    
-    [self.navigationController pushViewController:[LLSubscribeViewController new] animated:YES];
-    
-}
-
-
 
 - (LLSegmentBarVC *)segContentVC {
     if (!_segContentVC) {
