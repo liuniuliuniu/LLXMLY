@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "LLTabBarController.h"
 #import "LLTabBar.h"
+#import "LLRemotePlayer.h"
 
 
 @interface AppDelegate ()
@@ -29,19 +30,19 @@
     }];
     
     LLTabBar *tabbar = (LLTabBar *)rootVC.tabBar;
+    
     tabbar.middleClickBlock = ^(BOOL isPlaying) {
         if (isPlaying) {
             
             [[NSNotificationCenter defaultCenter]postNotificationName:@"playState" object:@(isPlaying)];
-            UIImage *image = [UIImage imageNamed:@"LL_Icon"];
-            [[NSNotificationCenter defaultCenter]postNotificationName:@"playImage" object:image];
+            
+            [[LLRemotePlayer shareInstance] resume];
             
         }else{
             
             [[NSNotificationCenter defaultCenter]postNotificationName:@"playState" object:@(isPlaying)];
-            UIImage *image = [UIImage imageNamed:@"LL_Icon"];
-            [[NSNotificationCenter defaultCenter]postNotificationName:@"playImage" object:image];
             
+            [[LLRemotePlayer shareInstance] pause];
         }
     };
     

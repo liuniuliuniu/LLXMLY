@@ -45,14 +45,6 @@ static LLRemotePlayer *_shareInstance;
 }
 
 
-//- (XMGResourceLoader *)resourceLoader {
-//    if (!_resourceLoader) {
-//        _resourceLoader = [[XMGResourceLoader alloc] init];
-//    }
-//    return _resourceLoader;
-//}
-
-
 - (void)playWithURL: (NSURL *)url isCache:(BOOL)isCache {
     
     
@@ -227,9 +219,7 @@ static LLRemotePlayer *_shareInstance;
         self.stateChange(state);
     }
     if (self.url) {
-        [[NSNotificationCenter defaultCenter] postNotificationName:kRemotePlayerURLOrStateChangeNotification object:nil userInfo:@{
-                                                                                                                                   @"playURL": self.url,                                                                  @"playState": @(state)
-                                                                                                                                   }];
+        [[NSNotificationCenter defaultCenter] postNotificationName:kRemotePlayerURLOrStateChangeNotification object:nil userInfo:@{                                                                                                                                   @"playURL": self.url,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            @"playState": @(state)                                                                                                                                   }];
     }
     
 }
@@ -238,10 +228,7 @@ static LLRemotePlayer *_shareInstance;
     _url = url;
     
     if (self.url) {
-        [[NSNotificationCenter defaultCenter] postNotificationName:kRemotePlayerURLOrStateChangeNotification object:nil userInfo:@{
-                                                                                                                                   @"playURL": self.url,                                                                  @"playState": @(self.state)
-                                                                                                                                   
-                                                                                                                                   }];
+        [[NSNotificationCenter defaultCenter] postNotificationName:kRemotePlayerURLOrStateChangeNotification object:nil userInfo:@{                                                                                                                                   @"playURL": self.url,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            @"playState": @(self.state)                                                                                                                                   }];
     }
     
 }
@@ -311,9 +298,7 @@ static LLRemotePlayer *_shareInstance;
             self.state = LLRemotePlayerStateLoading;
         }
     }
-    
-    
-    
+            
 }
 
 - (void)playEnd {

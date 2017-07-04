@@ -10,6 +10,7 @@
 #import "LLNavBar.h"
 #import "LLMiddleView.h"
 
+
 @interface LLNavigationController ()<UIGestureRecognizerDelegate>
 
 @end
@@ -69,7 +70,7 @@
     if (viewController.view.tag == 666) {
         viewController.view.tag = 888;
         LLMiddleView *middleView = [LLMiddleView middleView];
-        middleView.middleClickBlock = [LLMiddleView shareInstance].middleClickBlock;
+        middleView.middleClickBlock = [LLMiddleView shareInstance].middleClickBlock;                
         middleView.isPlaying = [LLMiddleView shareInstance].isPlaying;
         middleView.middleImg = [LLMiddleView shareInstance].middleImg;
         CGRect frame = middleView.frame;
@@ -81,7 +82,6 @@
         middleView.frame = frame;
         [viewController.view addSubview:middleView];
     }
-    
     
 }
 

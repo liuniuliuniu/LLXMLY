@@ -85,6 +85,7 @@
         
         LLMiddleView *middleView = [LLMiddleView middleView];
         middleView.middleClickBlock = [LLMiddleView shareInstance].middleClickBlock;
+                        
         middleView.isPlaying = [LLMiddleView shareInstance].isPlaying;
         middleView.middleImg = [LLMiddleView shareInstance].middleImg;
         CGRect frame = middleView.frame;

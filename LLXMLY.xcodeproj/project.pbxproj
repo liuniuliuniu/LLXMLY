@@ -27,7 +27,6 @@
 		D2BB3C131F0A89FB008234C0 /* LLAudioFileTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BB3C121F0A89FB008234C0 /* LLAudioFileTool.m */; };
 		D2BB3C161F0A8B1B008234C0 /* LLResourceLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BB3C151F0A8B1B008234C0 /* LLResourceLoader.m */; };
 		D2BB3C191F0A8BC6008234C0 /* LLRemotePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BB3C181F0A8BC6008234C0 /* LLRemotePlayer.m */; };
-		D2BB3C1C1F0A9864008234C0 /* LLDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BB3C1B1F0A9864008234C0 /* LLDiscoverViewController.m */; };
 		D2BB3C1F1F0A988F008234C0 /* LLSubscribeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BB3C1E1F0A988F008234C0 /* LLSubscribeViewController.m */; };
 		D2BB3C4D1F0B3054008234C0 /* LLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BB3C421F0B3054008234C0 /* LLNavigationController.m */; };
 		D2BB3C4E1F0B3054008234C0 /* LLTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BB3C441F0B3054008234C0 /* LLTabBarController.m */; };
@@ -35,6 +34,16 @@
 		D2BB3C501F0B3054008234C0 /* LLMiddleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2BB3C481F0B3054008234C0 /* LLMiddleView.xib */; };
 		D2BB3C511F0B3054008234C0 /* LLNavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BB3C4A1F0B3054008234C0 /* LLNavBar.m */; };
 		D2BB3C521F0B3054008234C0 /* LLTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BB3C4C1F0B3054008234C0 /* LLTabBar.m */; };
+		D2BB3C581F0B3887008234C0 /* UIView+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BB3C571F0B3887008234C0 /* UIView+Category.m */; };
+		D2BB3C5B1F0B38FA008234C0 /* LLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BB3C5A1F0B38FA008234C0 /* LLSessionManager.m */; };
+		D2BB3C641F0B3B1D008234C0 /* LLDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BB3C631F0B3B1D008234C0 /* LLDiscoverViewController.m */; };
+		D2BB3C671F0B3B6A008234C0 /* LLCategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BB3C661F0B3B6A008234C0 /* LLCategoryModel.m */; };
+		D2BB3C6A1F0B3CCE008234C0 /* LLDownLoadVoiceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BB3C691F0B3CCE008234C0 /* LLDownLoadVoiceModel.m */; };
+		D2BB3C6E1F0B3FB0008234C0 /* LLDownLoadVoiceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BB3C6C1F0B3FB0008234C0 /* LLDownLoadVoiceCell.m */; };
+		D2BB3C6F1F0B3FB0008234C0 /* LLDownLoadVoiceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2BB3C6D1F0B3FB0008234C0 /* LLDownLoadVoiceCell.xib */; };
+		D2BB3C721F0B41C2008234C0 /* LLDownLoadVoiceCellPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BB3C711F0B41C2008234C0 /* LLDownLoadVoiceCellPresenter.m */; };
+		D2BB3C751F0B4B0B008234C0 /* LLDownLoadDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BB3C741F0B4B0B008234C0 /* LLDownLoadDataProvider.m */; };
+		D2BB3C781F0B4D00008234C0 /* LLDownLoadVoiceListTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BB3C771F0B4D00008234C0 /* LLDownLoadVoiceListTVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,8 +85,6 @@
 		D2BB3C151F0A8B1B008234C0 /* LLResourceLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLResourceLoader.m; sourceTree = "<group>"; };
 		D2BB3C171F0A8BC6008234C0 /* LLRemotePlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLRemotePlayer.h; sourceTree = "<group>"; };
 		D2BB3C181F0A8BC6008234C0 /* LLRemotePlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLRemotePlayer.m; sourceTree = "<group>"; };
-		D2BB3C1A1F0A9864008234C0 /* LLDiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLDiscoverViewController.h; sourceTree = "<group>"; };
-		D2BB3C1B1F0A9864008234C0 /* LLDiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLDiscoverViewController.m; sourceTree = "<group>"; };
 		D2BB3C1D1F0A988F008234C0 /* LLSubscribeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLSubscribeViewController.h; sourceTree = "<group>"; };
 		D2BB3C1E1F0A988F008234C0 /* LLSubscribeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLSubscribeViewController.m; sourceTree = "<group>"; };
 		D2BB3C411F0B3054008234C0 /* LLNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLNavigationController.h; sourceTree = "<group>"; };
@@ -91,6 +98,26 @@
 		D2BB3C4A1F0B3054008234C0 /* LLNavBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLNavBar.m; sourceTree = "<group>"; };
 		D2BB3C4B1F0B3054008234C0 /* LLTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLTabBar.h; sourceTree = "<group>"; };
 		D2BB3C4C1F0B3054008234C0 /* LLTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLTabBar.m; sourceTree = "<group>"; };
+		D2BB3C561F0B3887008234C0 /* UIView+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Category.h"; sourceTree = "<group>"; };
+		D2BB3C571F0B3887008234C0 /* UIView+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Category.m"; sourceTree = "<group>"; };
+		D2BB3C591F0B38FA008234C0 /* LLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLSessionManager.h; sourceTree = "<group>"; };
+		D2BB3C5A1F0B38FA008234C0 /* LLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLSessionManager.m; sourceTree = "<group>"; };
+		D2BB3C621F0B3B1D008234C0 /* LLDiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLDiscoverViewController.h; sourceTree = "<group>"; };
+		D2BB3C631F0B3B1D008234C0 /* LLDiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLDiscoverViewController.m; sourceTree = "<group>"; };
+		D2BB3C651F0B3B6A008234C0 /* LLCategoryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLCategoryModel.h; sourceTree = "<group>"; };
+		D2BB3C661F0B3B6A008234C0 /* LLCategoryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLCategoryModel.m; sourceTree = "<group>"; };
+		D2BB3C681F0B3CCE008234C0 /* LLDownLoadVoiceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLDownLoadVoiceModel.h; sourceTree = "<group>"; };
+		D2BB3C691F0B3CCE008234C0 /* LLDownLoadVoiceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLDownLoadVoiceModel.m; sourceTree = "<group>"; };
+		D2BB3C6B1F0B3FB0008234C0 /* LLDownLoadVoiceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLDownLoadVoiceCell.h; sourceTree = "<group>"; };
+		D2BB3C6C1F0B3FB0008234C0 /* LLDownLoadVoiceCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLDownLoadVoiceCell.m; sourceTree = "<group>"; };
+		D2BB3C6D1F0B3FB0008234C0 /* LLDownLoadVoiceCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LLDownLoadVoiceCell.xib; sourceTree = "<group>"; };
+		D2BB3C701F0B41C2008234C0 /* LLDownLoadVoiceCellPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLDownLoadVoiceCellPresenter.h; sourceTree = "<group>"; };
+		D2BB3C711F0B41C2008234C0 /* LLDownLoadVoiceCellPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLDownLoadVoiceCellPresenter.m; sourceTree = "<group>"; };
+		D2BB3C731F0B4B0B008234C0 /* LLDownLoadDataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLDownLoadDataProvider.h; sourceTree = "<group>"; };
+		D2BB3C741F0B4B0B008234C0 /* LLDownLoadDataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLDownLoadDataProvider.m; sourceTree = "<group>"; };
+		D2BB3C761F0B4D00008234C0 /* LLDownLoadVoiceListTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLDownLoadVoiceListTVC.h; sourceTree = "<group>"; };
+		D2BB3C771F0B4D00008234C0 /* LLDownLoadVoiceListTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLDownLoadVoiceListTVC.m; sourceTree = "<group>"; };
+		D2BB3C791F0B5194008234C0 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,13 +164,12 @@
 			isa = PBXGroup;
 			children = (
 				D2BB3C3E1F0B3054008234C0 /* Classes */,
-				D2BB3C1A1F0A9864008234C0 /* LLDiscoverViewController.h */,
-				D2BB3C1B1F0A9864008234C0 /* LLDiscoverViewController.m */,
 				D2BB3C1D1F0A988F008234C0 /* LLSubscribeViewController.h */,
 				D2BB3C1E1F0A988F008234C0 /* LLSubscribeViewController.m */,
 				D2BB3C0A1F0A880B008234C0 /* LLRemotePlayer */,
 				D2BB3BFD1F0A83E8008234C0 /* LLDownLoadLib */,
 				D2BB3BED1F0A7E48008234C0 /* LLSqliteLib */,
+				D2BB3C531F0B37A1008234C0 /* LLThirdLib */,
 				D2BB3BD61F0A7B3D008234C0 /* Supporting Files */,
 			);
 			path = LLXMLY;
@@ -154,6 +180,7 @@
 			children = (
 				D2BB3BD91F0A7B3D008234C0 /* AppDelegate.h */,
 				D2BB3BDA1F0A7B3D008234C0 /* AppDelegate.m */,
+				D2BB3C791F0B5194008234C0 /* PrefixHeader.pch */,
 				D2BB3BDF1F0A7B3D008234C0 /* Main.storyboard */,
 				D2BB3BE21F0A7B3D008234C0 /* Assets.xcassets */,
 				D2BB3BE41F0A7B3D008234C0 /* LaunchScreen.storyboard */,
@@ -223,6 +250,7 @@
 			isa = PBXGroup;
 			children = (
 				D2BB3C3F1F0B3054008234C0 /* MainModule */,
+				D2BB3C5C1F0B3AEA008234C0 /* Discover */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -257,6 +285,95 @@
 				D2BB3C4A1F0B3054008234C0 /* LLNavBar.m */,
 				D2BB3C4B1F0B3054008234C0 /* LLTabBar.h */,
 				D2BB3C4C1F0B3054008234C0 /* LLTabBar.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D2BB3C531F0B37A1008234C0 /* LLThirdLib */ = {
+			isa = PBXGroup;
+			children = (
+				D2BB3C541F0B37D7008234C0 /* Category */,
+				D2BB3C551F0B37D7008234C0 /* NetWork */,
+			);
+			path = LLThirdLib;
+			sourceTree = "<group>";
+		};
+		D2BB3C541F0B37D7008234C0 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				D2BB3C561F0B3887008234C0 /* UIView+Category.h */,
+				D2BB3C571F0B3887008234C0 /* UIView+Category.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		D2BB3C551F0B37D7008234C0 /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				D2BB3C591F0B38FA008234C0 /* LLSessionManager.h */,
+				D2BB3C5A1F0B38FA008234C0 /* LLSessionManager.m */,
+			);
+			path = NetWork;
+			sourceTree = "<group>";
+		};
+		D2BB3C5C1F0B3AEA008234C0 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				D2BB3C5D1F0B3AEA008234C0 /* Controller */,
+				D2BB3C5E1F0B3AEA008234C0 /* DataProvider */,
+				D2BB3C5F1F0B3AEA008234C0 /* Model */,
+				D2BB3C601F0B3AEA008234C0 /* Presenter */,
+				D2BB3C611F0B3AEA008234C0 /* View */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		D2BB3C5D1F0B3AEA008234C0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D2BB3C621F0B3B1D008234C0 /* LLDiscoverViewController.h */,
+				D2BB3C631F0B3B1D008234C0 /* LLDiscoverViewController.m */,
+				D2BB3C761F0B4D00008234C0 /* LLDownLoadVoiceListTVC.h */,
+				D2BB3C771F0B4D00008234C0 /* LLDownLoadVoiceListTVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D2BB3C5E1F0B3AEA008234C0 /* DataProvider */ = {
+			isa = PBXGroup;
+			children = (
+				D2BB3C731F0B4B0B008234C0 /* LLDownLoadDataProvider.h */,
+				D2BB3C741F0B4B0B008234C0 /* LLDownLoadDataProvider.m */,
+			);
+			path = DataProvider;
+			sourceTree = "<group>";
+		};
+		D2BB3C5F1F0B3AEA008234C0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D2BB3C651F0B3B6A008234C0 /* LLCategoryModel.h */,
+				D2BB3C661F0B3B6A008234C0 /* LLCategoryModel.m */,
+				D2BB3C681F0B3CCE008234C0 /* LLDownLoadVoiceModel.h */,
+				D2BB3C691F0B3CCE008234C0 /* LLDownLoadVoiceModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D2BB3C601F0B3AEA008234C0 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				D2BB3C701F0B41C2008234C0 /* LLDownLoadVoiceCellPresenter.h */,
+				D2BB3C711F0B41C2008234C0 /* LLDownLoadVoiceCellPresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		D2BB3C611F0B3AEA008234C0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D2BB3C6B1F0B3FB0008234C0 /* LLDownLoadVoiceCell.h */,
+				D2BB3C6C1F0B3FB0008234C0 /* LLDownLoadVoiceCell.m */,
+				D2BB3C6D1F0B3FB0008234C0 /* LLDownLoadVoiceCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -325,6 +442,7 @@
 			files = (
 				D2BB3BE61F0A7B3D008234C0 /* LaunchScreen.storyboard in Resources */,
 				D2BB3BE31F0A7B3D008234C0 /* Assets.xcassets in Resources */,
+				D2BB3C6F1F0B3FB0008234C0 /* LLDownLoadVoiceCell.xib in Resources */,
 				D2BB3BE11F0A7B3D008234C0 /* Main.storyboard in Resources */,
 				D2BB3C501F0B3054008234C0 /* LLMiddleView.xib in Resources */,
 			);
@@ -387,19 +505,27 @@
 			files = (
 				D2BB3C1F1F0A988F008234C0 /* LLSubscribeViewController.m in Sources */,
 				D2BB3C521F0B3054008234C0 /* LLTabBar.m in Sources */,
+				D2BB3C6A1F0B3CCE008234C0 /* LLDownLoadVoiceModel.m in Sources */,
+				D2BB3C581F0B3887008234C0 /* UIView+Category.m in Sources */,
 				D2BB3C511F0B3054008234C0 /* LLNavBar.m in Sources */,
 				D2BB3BDB1F0A7B3D008234C0 /* AppDelegate.m in Sources */,
 				D2BB3BD81F0A7B3D008234C0 /* main.m in Sources */,
 				D2BB3C031F0A8498008234C0 /* LLDownLoaderFileTool.m in Sources */,
 				D2BB3C061F0A84E1008234C0 /* LLDownLoader.m in Sources */,
+				D2BB3C6E1F0B3FB0008234C0 /* LLDownLoadVoiceCell.m in Sources */,
 				D2BB3C091F0A8629008234C0 /* LLDownLoadManager.m in Sources */,
+				D2BB3C721F0B41C2008234C0 /* LLDownLoadVoiceCellPresenter.m in Sources */,
 				D2BB3C101F0A89D9008234C0 /* LLAudioDownLoader.m in Sources */,
 				D2BB3BF31F0A7F2D008234C0 /* LLSqliteTool.m in Sources */,
+				D2BB3C641F0B3B1D008234C0 /* LLDiscoverViewController.m in Sources */,
 				D2BB3C0D1F0A883E008234C0 /* NSURL+LLAudio.m in Sources */,
+				D2BB3C5B1F0B38FA008234C0 /* LLSessionManager.m in Sources */,
 				D2BB3C001F0A842B008234C0 /* NSString+LLDownLoader.m in Sources */,
+				D2BB3C781F0B4D00008234C0 /* LLDownLoadVoiceListTVC.m in Sources */,
 				D2BB3BF91F0A802E008234C0 /* LLSqliteModelTool.m in Sources */,
+				D2BB3C671F0B3B6A008234C0 /* LLCategoryModel.m in Sources */,
+				D2BB3C751F0B4B0B008234C0 /* LLDownLoadDataProvider.m in Sources */,
 				D2BB3C161F0A8B1B008234C0 /* LLResourceLoader.m in Sources */,
-				D2BB3C1C1F0A9864008234C0 /* LLDiscoverViewController.m in Sources */,
 				D2BB3C191F0A8BC6008234C0 /* LLRemotePlayer.m in Sources */,
 				D2BB3C4E1F0B3054008234C0 /* LLTabBarController.m in Sources */,
 				D2BB3BF61F0A7FDA008234C0 /* LLTableTool.m in Sources */,
@@ -528,6 +654,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5KVUAK8MDB;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/dayingxiangkeji/Desktop/LLXMLY/LLXMLY/PrefixHeader.pch;
 				INFOPLIST_FILE = LLXMLY/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = liushaohua.LLXMLY;
@@ -542,6 +670,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5KVUAK8MDB;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/dayingxiangkeji/Desktop/LLXMLY/LLXMLY/PrefixHeader.pch;
 				INFOPLIST_FILE = LLXMLY/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = liushaohua.LLXMLY;
