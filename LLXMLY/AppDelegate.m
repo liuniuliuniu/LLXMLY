@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "LLTabBarController.h"
+#import "LLTabBar.h"
+
 
 @interface AppDelegate ()
 
@@ -16,7 +19,37 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    LLTabBarController *rootVC = [LLTabBarController tabBarControllerWithAddChildVCsBlock:^(LLTabBarController *tabBarC) {
+        
+        [tabBarC addChildVC:[NSClassFromString(@"LLDiscoverViewController") new] normalImageName:@"tabbar_find_n" selectedImageName:@"tabbar_find_h" isRequiredNavController:YES];
+        [tabBarC addChildVC:[UIViewController new] normalImageName:@"tabbar_sound_n" selectedImageName:@"tabbar_sound_h" isRequiredNavController:YES];
+        [tabBarC addChildVC:[UIViewController new] normalImageName:@"tabbar_download_n" selectedImageName:@"tabbar_download_h" isRequiredNavController:YES];
+        [tabBarC addChildVC:[UIViewController new] normalImageName:@"tabbar_me_n" selectedImageName:@"tabbar_me_h" isRequiredNavController:YES];
+    }];
+    
+    LLTabBar *tabbar = (LLTabBar *)rootVC.tabBar;
+    tabbar.middleClickBlock = ^(BOOL isPlaying) {
+        if (isPlaying) {
+            
+            [[NSNotificationCenter defaultCenter]postNotificationName:@"playState" object:@(isPlaying)];
+            UIImage *image = [UIImage imageNamed:@"LL_Icon"];
+            [[NSNotificationCenter defaultCenter]postNotificationName:@"playImage" object:image];
+            
+        }else{
+            
+            [[NSNotificationCenter defaultCenter]postNotificationName:@"playState" object:@(isPlaying)];
+            UIImage *image = [UIImage imageNamed:@"LL_Icon"];
+            [[NSNotificationCenter defaultCenter]postNotificationName:@"playImage" object:image];
+            
+        }
+    };
+    
+    self.window.rootViewController = rootVC;
+    [self.window makeKeyAndVisible];
+
+    
+    
     return YES;
 }
 

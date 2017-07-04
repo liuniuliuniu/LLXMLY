@@ -14,6 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - LLMusicBase/BaseClasses (0.5.0)
   - LLSegmentBar (0.0.1)
   - MJExtension (3.0.13)
   - SDWebImage (4.0.0):
@@ -22,16 +23,18 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
+  - LLMusicBase/BaseClasses
   - LLSegmentBar
   - MJExtension
   - SDWebImage
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  LLMusicBase: 213ad3875bd631e7c3ea1324a2ad796facc32bdb
   LLSegmentBar: 7ef235c5ed4fe8f14ff4c9b2a6069f839ffe30dc
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
 
-PODFILE CHECKSUM: 9a0d54ba2f8bc2548308b1e48ffc1ddd044b08f0
+PODFILE CHECKSUM: 7d0d7bf9f88b46f907a1dd90a4576b59ca23f5fc
 
 COCOAPODS: 1.2.1

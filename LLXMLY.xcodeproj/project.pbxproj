@@ -10,7 +10,6 @@
 		23AFA968946951AE19725407 /* libPods-LLXMLY.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CACBF201EEB277030E10740 /* libPods-LLXMLY.a */; };
 		D2BB3BD81F0A7B3D008234C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BB3BD71F0A7B3D008234C0 /* main.m */; };
 		D2BB3BDB1F0A7B3D008234C0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BB3BDA1F0A7B3D008234C0 /* AppDelegate.m */; };
-		D2BB3BDE1F0A7B3D008234C0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BB3BDD1F0A7B3D008234C0 /* ViewController.m */; };
 		D2BB3BE11F0A7B3D008234C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2BB3BDF1F0A7B3D008234C0 /* Main.storyboard */; };
 		D2BB3BE31F0A7B3D008234C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2BB3BE21F0A7B3D008234C0 /* Assets.xcassets */; };
 		D2BB3BE61F0A7B3D008234C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2BB3BE41F0A7B3D008234C0 /* LaunchScreen.storyboard */; };
@@ -28,6 +27,14 @@
 		D2BB3C131F0A89FB008234C0 /* LLAudioFileTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BB3C121F0A89FB008234C0 /* LLAudioFileTool.m */; };
 		D2BB3C161F0A8B1B008234C0 /* LLResourceLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BB3C151F0A8B1B008234C0 /* LLResourceLoader.m */; };
 		D2BB3C191F0A8BC6008234C0 /* LLRemotePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BB3C181F0A8BC6008234C0 /* LLRemotePlayer.m */; };
+		D2BB3C1C1F0A9864008234C0 /* LLDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BB3C1B1F0A9864008234C0 /* LLDiscoverViewController.m */; };
+		D2BB3C1F1F0A988F008234C0 /* LLSubscribeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BB3C1E1F0A988F008234C0 /* LLSubscribeViewController.m */; };
+		D2BB3C4D1F0B3054008234C0 /* LLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BB3C421F0B3054008234C0 /* LLNavigationController.m */; };
+		D2BB3C4E1F0B3054008234C0 /* LLTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BB3C441F0B3054008234C0 /* LLTabBarController.m */; };
+		D2BB3C4F1F0B3054008234C0 /* LLMiddleView.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BB3C471F0B3054008234C0 /* LLMiddleView.m */; };
+		D2BB3C501F0B3054008234C0 /* LLMiddleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2BB3C481F0B3054008234C0 /* LLMiddleView.xib */; };
+		D2BB3C511F0B3054008234C0 /* LLNavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BB3C4A1F0B3054008234C0 /* LLNavBar.m */; };
+		D2BB3C521F0B3054008234C0 /* LLTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BB3C4C1F0B3054008234C0 /* LLTabBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,8 +45,6 @@
 		D2BB3BD71F0A7B3D008234C0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D2BB3BD91F0A7B3D008234C0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D2BB3BDA1F0A7B3D008234C0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D2BB3BDC1F0A7B3D008234C0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D2BB3BDD1F0A7B3D008234C0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D2BB3BE01F0A7B3D008234C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D2BB3BE21F0A7B3D008234C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D2BB3BE51F0A7B3D008234C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -71,6 +76,21 @@
 		D2BB3C151F0A8B1B008234C0 /* LLResourceLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLResourceLoader.m; sourceTree = "<group>"; };
 		D2BB3C171F0A8BC6008234C0 /* LLRemotePlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLRemotePlayer.h; sourceTree = "<group>"; };
 		D2BB3C181F0A8BC6008234C0 /* LLRemotePlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLRemotePlayer.m; sourceTree = "<group>"; };
+		D2BB3C1A1F0A9864008234C0 /* LLDiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLDiscoverViewController.h; sourceTree = "<group>"; };
+		D2BB3C1B1F0A9864008234C0 /* LLDiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLDiscoverViewController.m; sourceTree = "<group>"; };
+		D2BB3C1D1F0A988F008234C0 /* LLSubscribeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLSubscribeViewController.h; sourceTree = "<group>"; };
+		D2BB3C1E1F0A988F008234C0 /* LLSubscribeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLSubscribeViewController.m; sourceTree = "<group>"; };
+		D2BB3C411F0B3054008234C0 /* LLNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLNavigationController.h; sourceTree = "<group>"; };
+		D2BB3C421F0B3054008234C0 /* LLNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLNavigationController.m; sourceTree = "<group>"; };
+		D2BB3C431F0B3054008234C0 /* LLTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLTabBarController.h; sourceTree = "<group>"; };
+		D2BB3C441F0B3054008234C0 /* LLTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLTabBarController.m; sourceTree = "<group>"; };
+		D2BB3C461F0B3054008234C0 /* LLMiddleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLMiddleView.h; sourceTree = "<group>"; };
+		D2BB3C471F0B3054008234C0 /* LLMiddleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLMiddleView.m; sourceTree = "<group>"; };
+		D2BB3C481F0B3054008234C0 /* LLMiddleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LLMiddleView.xib; sourceTree = "<group>"; };
+		D2BB3C491F0B3054008234C0 /* LLNavBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLNavBar.h; sourceTree = "<group>"; };
+		D2BB3C4A1F0B3054008234C0 /* LLNavBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLNavBar.m; sourceTree = "<group>"; };
+		D2BB3C4B1F0B3054008234C0 /* LLTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLTabBar.h; sourceTree = "<group>"; };
+		D2BB3C4C1F0B3054008234C0 /* LLTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLTabBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,14 +136,11 @@
 		D2BB3BD51F0A7B3D008234C0 /* LLXMLY */ = {
 			isa = PBXGroup;
 			children = (
-				D2BB3BD91F0A7B3D008234C0 /* AppDelegate.h */,
-				D2BB3BDA1F0A7B3D008234C0 /* AppDelegate.m */,
-				D2BB3BDC1F0A7B3D008234C0 /* ViewController.h */,
-				D2BB3BDD1F0A7B3D008234C0 /* ViewController.m */,
-				D2BB3BDF1F0A7B3D008234C0 /* Main.storyboard */,
-				D2BB3BE21F0A7B3D008234C0 /* Assets.xcassets */,
-				D2BB3BE41F0A7B3D008234C0 /* LaunchScreen.storyboard */,
-				D2BB3BE71F0A7B3D008234C0 /* Info.plist */,
+				D2BB3C3E1F0B3054008234C0 /* Classes */,
+				D2BB3C1A1F0A9864008234C0 /* LLDiscoverViewController.h */,
+				D2BB3C1B1F0A9864008234C0 /* LLDiscoverViewController.m */,
+				D2BB3C1D1F0A988F008234C0 /* LLSubscribeViewController.h */,
+				D2BB3C1E1F0A988F008234C0 /* LLSubscribeViewController.m */,
 				D2BB3C0A1F0A880B008234C0 /* LLRemotePlayer */,
 				D2BB3BFD1F0A83E8008234C0 /* LLDownLoadLib */,
 				D2BB3BED1F0A7E48008234C0 /* LLSqliteLib */,
@@ -135,6 +152,12 @@
 		D2BB3BD61F0A7B3D008234C0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D2BB3BD91F0A7B3D008234C0 /* AppDelegate.h */,
+				D2BB3BDA1F0A7B3D008234C0 /* AppDelegate.m */,
+				D2BB3BDF1F0A7B3D008234C0 /* Main.storyboard */,
+				D2BB3BE21F0A7B3D008234C0 /* Assets.xcassets */,
+				D2BB3BE41F0A7B3D008234C0 /* LaunchScreen.storyboard */,
+				D2BB3BE71F0A7B3D008234C0 /* Info.plist */,
 				D2BB3BD71F0A7B3D008234C0 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -194,6 +217,48 @@
 				D2BB3C151F0A8B1B008234C0 /* LLResourceLoader.m */,
 			);
 			path = LLRemotePlayer;
+			sourceTree = "<group>";
+		};
+		D2BB3C3E1F0B3054008234C0 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D2BB3C3F1F0B3054008234C0 /* MainModule */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		D2BB3C3F1F0B3054008234C0 /* MainModule */ = {
+			isa = PBXGroup;
+			children = (
+				D2BB3C401F0B3054008234C0 /* Controller */,
+				D2BB3C451F0B3054008234C0 /* View */,
+			);
+			path = MainModule;
+			sourceTree = "<group>";
+		};
+		D2BB3C401F0B3054008234C0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D2BB3C411F0B3054008234C0 /* LLNavigationController.h */,
+				D2BB3C421F0B3054008234C0 /* LLNavigationController.m */,
+				D2BB3C431F0B3054008234C0 /* LLTabBarController.h */,
+				D2BB3C441F0B3054008234C0 /* LLTabBarController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D2BB3C451F0B3054008234C0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D2BB3C461F0B3054008234C0 /* LLMiddleView.h */,
+				D2BB3C471F0B3054008234C0 /* LLMiddleView.m */,
+				D2BB3C481F0B3054008234C0 /* LLMiddleView.xib */,
+				D2BB3C491F0B3054008234C0 /* LLNavBar.h */,
+				D2BB3C4A1F0B3054008234C0 /* LLNavBar.m */,
+				D2BB3C4B1F0B3054008234C0 /* LLTabBar.h */,
+				D2BB3C4C1F0B3054008234C0 /* LLTabBar.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +326,7 @@
 				D2BB3BE61F0A7B3D008234C0 /* LaunchScreen.storyboard in Resources */,
 				D2BB3BE31F0A7B3D008234C0 /* Assets.xcassets in Resources */,
 				D2BB3BE11F0A7B3D008234C0 /* Main.storyboard in Resources */,
+				D2BB3C501F0B3054008234C0 /* LLMiddleView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,7 +385,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2BB3BDE1F0A7B3D008234C0 /* ViewController.m in Sources */,
+				D2BB3C1F1F0A988F008234C0 /* LLSubscribeViewController.m in Sources */,
+				D2BB3C521F0B3054008234C0 /* LLTabBar.m in Sources */,
+				D2BB3C511F0B3054008234C0 /* LLNavBar.m in Sources */,
 				D2BB3BDB1F0A7B3D008234C0 /* AppDelegate.m in Sources */,
 				D2BB3BD81F0A7B3D008234C0 /* main.m in Sources */,
 				D2BB3C031F0A8498008234C0 /* LLDownLoaderFileTool.m in Sources */,
@@ -331,10 +399,14 @@
 				D2BB3C001F0A842B008234C0 /* NSString+LLDownLoader.m in Sources */,
 				D2BB3BF91F0A802E008234C0 /* LLSqliteModelTool.m in Sources */,
 				D2BB3C161F0A8B1B008234C0 /* LLResourceLoader.m in Sources */,
+				D2BB3C1C1F0A9864008234C0 /* LLDiscoverViewController.m in Sources */,
 				D2BB3C191F0A8BC6008234C0 /* LLRemotePlayer.m in Sources */,
+				D2BB3C4E1F0B3054008234C0 /* LLTabBarController.m in Sources */,
 				D2BB3BF61F0A7FDA008234C0 /* LLTableTool.m in Sources */,
+				D2BB3C4D1F0B3054008234C0 /* LLNavigationController.m in Sources */,
 				D2BB3C131F0A89FB008234C0 /* LLAudioFileTool.m in Sources */,
 				D2BB3BF01F0A7E8C008234C0 /* LLModelTool.m in Sources */,
+				D2BB3C4F1F0B3054008234C0 /* LLMiddleView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,6 +532,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = liushaohua.LLXMLY;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -473,6 +546,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = liushaohua.LLXMLY;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  LLDiscoverViewController.h
 //  LLXMLY
 //
 //  Created by liushaohua on 2017/7/3.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface LLDiscoverViewController : UIViewController
 
 @end
-

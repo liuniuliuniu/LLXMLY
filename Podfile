@@ -1,3 +1,8 @@
+
+source 'git@git.coding.net:liuniuliuniu/LLMusicSpecs.git'
+source 'https://github.com/CocoaPods/Specs.git'  #官方仓库的地址
+
+
 platform :ios, '9.0'
 
 target 'LLXMLY' do
@@ -5,6 +10,9 @@ target 'LLXMLY' do
   # use_frameworks!
 
   # Pods for LLXMLY
+
+pod 'LLMusicBase/BaseClasses'
+
 
 pod 'LLSegmentBar'
 pod 'AFNetworking'

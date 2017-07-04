@@ -1,24 +1,26 @@
 //
-//  ViewController.m
+//  LLSubscribeViewController.m
 //  LLXMLY
 //
 //  Created by liushaohua on 2017/7/3.
 //  Copyright © 2017年 liushaohua. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "LLSubscribeViewController.h"
 
-@interface ViewController ()
+@interface LLSubscribeViewController ()
 
 @end
 
-@implementation ViewController
+@implementation LLSubscribeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    self.view.tag = 666;
+    self.view.backgroundColor = [UIColor redColor];
+    
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
