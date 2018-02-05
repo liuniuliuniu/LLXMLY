@@ -37,16 +37,12 @@
     // 其实就是控制器的容器视图
     [gester.view addGestureRecognizer:panGester];
     
-    
     gester.delaysTouchesBegan = YES;
     panGester.delegate = self;
-
 }
 
 - (void)back {
-    
     [self popViewControllerAnimated:YES];
-    
 }
 
 /**
@@ -57,14 +53,11 @@
  */
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated{
 
-    if (self.childViewControllers.count > 0) {        
-        //统一设置返回按钮
+    if (self.childViewControllers.count > 0) {
         viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"left_back_n"] style:0 target:self action:@selector(back)];
         viewController.hidesBottomBarWhenPushed = YES;
-        
     }
     
-    // 千万不要忘记写
     [super pushViewController:viewController animated:animated];
     
     if (viewController.view.tag == 666) {
@@ -82,28 +75,14 @@
         middleView.frame = frame;
         [viewController.view addSubview:middleView];
     }
-    
 }
 
-
 #pragma mark - UIGestureRecognizerDelegate
-
 - (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer {
-    
-    // 如果根控制器也要返回手势有效, 就会造成假死状态
-    // 所以, 需要过滤根控制器
     if(self.childViewControllers.count == 1) {
         return NO;
     }
-    
     return YES;
-    
 }
-
-
-
-
-
-
 
 @end

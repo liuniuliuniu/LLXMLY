@@ -12,7 +12,6 @@
 
 @implementation LLTableTool
 
-
 /**
  判断表格是否已经存在(注意容错大小写)
  */
@@ -27,7 +26,6 @@
         }
     }];
     return isTableExists;
-    
 }
 /**
  获取表格里面所有的字段
@@ -41,7 +39,6 @@
     NSString *createSql = resultSet.firstObject[@"sql"];
     
     //    CREATE TABLE XMGStu(age integer,num integer,score real,name text,xxx text, primary key(num))
-    
     NSArray *sqlArray = [createSql componentsSeparatedByString:@"("];
     
     if (sqlArray.count >= 2) {
@@ -59,19 +56,11 @@
             // 去除首尾空格, 并按空格进行划分
             NSString *columnName = [[columnNameType stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]] componentsSeparatedByString:@" "].firstObject;
             [columnNames addObject:columnName];
-            
         }
-        
         return columnNames;
-        
     }
-    
     return nil;
-    
 }
-
-
-
 
 @end
 

@@ -14,9 +14,6 @@ typedef NS_ENUM(NSUInteger, LLDownLoadVoiceCellState) {
     LLDownLoadVoiceCellStateDownLoading,
     LLDownLoadVoiceCellStateDownLoaded,
 };
-
-
-
 @interface LLDownLoadVoiceCell : UITableViewCell
 
 + (instancetype)cellWithTableView:(UITableView *)tableView;

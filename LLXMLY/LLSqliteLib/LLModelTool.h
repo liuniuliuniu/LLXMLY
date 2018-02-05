@@ -10,20 +10,16 @@
 
 @protocol LLSqliteModelToolDelegate <NSObject>
 
-
 - (NSString *)primaryKey;
 
 - (NSArray *)ignoreIvarNames;
 
 - (NSDictionary *)renameDic;
 
-
-
 @end
 
 
 @interface LLModelTool : NSObject
-
 
 /**
  获取表格名称

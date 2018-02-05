@@ -18,19 +18,16 @@ typedef enum : NSUInteger {
     LLSqliteModelToolRelationTypeNE,
 } LLSqliteModelToolRelationType;
 
-
 typedef enum : NSUInteger {
     LLSqliteModelToolNAONot,
     LLSqliteModelToolNAOAnd,
     LLSqliteModelToolNAOOr,
 } LLSqliteModelToolNAO;
 
-
 @interface LLSqliteModelTool : NSObject
 
 // runtime 获取更多的信息, 让用户, 尽可能少的, 给我们提供信息
 + (BOOL)createTableWithModelClass: (Class)cls withUID: (NSString *)uid;
-
 
 // 保存/ 已经存在, 更新
 + (BOOL)saveModel: (id)model uid: (NSString *)uid;

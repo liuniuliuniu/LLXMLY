@@ -11,7 +11,6 @@
 
 @interface LLDownLoadManager : NSObject
 
-
 // 单例
 + (instancetype)shareInstance;
 

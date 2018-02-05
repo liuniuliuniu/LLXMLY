@@ -65,8 +65,7 @@
 
 #pragma mark - NSURLSessionDataDelegate
 
-- (void)URLSession:(NSURLSession *)session dataTask:(NSURLSessionDataTask *)dataTask didReceiveResponse:(NSURLResponse *)response completionHandler:(void (^)(NSURLSessionResponseDisposition))completionHandler
-{
+- (void)URLSession:(NSURLSession *)session dataTask:(NSURLSessionDataTask *)dataTask didReceiveResponse:(NSURLResponse *)response completionHandler:(void (^)(NSURLSessionResponseDisposition))completionHandler {
     
     NSHTTPURLResponse *httpResponse =  (NSHTTPURLResponse *)response;
     
@@ -79,8 +78,7 @@
     completionHandler(NSURLSessionResponseAllow);
 }
 
-- (void)URLSession:(NSURLSession *)session dataTask:(NSURLSessionDataTask *)dataTask didReceiveData:(NSData *)data
-{
+- (void)URLSession:(NSURLSession *)session dataTask:(NSURLSessionDataTask *)dataTask didReceiveData:(NSData *)data {
     self.loadedSize += data.length;
     [self.outputStream write:data.bytes maxLength:data.length];
     
@@ -90,17 +88,14 @@
     
 }
 
-- (void)URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task didCompleteWithError:(NSError *)error
-{
+- (void)URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task didCompleteWithError:(NSError *)error {
     if (error == nil) {
         // 判断, 本地下载的大小, 是否等于文件的总大小
         if ([LLAudioFileTool tmpFileSizeWithURL:self.url] == self.totalSize)
         {
             [LLAudioFileTool moveTmpPathToCachePath:self.url];
         }
-    }
-    
-    
+    }        
 }
 
 

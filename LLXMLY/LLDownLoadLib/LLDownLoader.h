@@ -34,9 +34,10 @@ typedef void(^DownLoadFailType)();
 - (void)downLoadWithURL: (NSURL *)url;
 
 + (NSString *)downLoadedFileWithURL: (NSURL *)url;
-+ (long long)tmpCacheSizeWithURL: (NSURL *)url;
-+ (void)clearCacheWithURL: (NSURL *)url;
 
++ (long long)tmpCacheSizeWithURL: (NSURL *)url;
+
++ (void)clearCacheWithURL: (NSURL *)url;
 
 - (void)downLoadWithURL: (NSURL *)url downLoadInfo: (DownLoadInfoType)downLoadBlock success: (DownLoadSuccessType)successBlock failed: (DownLoadFailType)failBlock;
 

@@ -57,14 +57,11 @@
     
     self.middleView.frame = CGRectMake((kScreenWidth - width) * 0.5, (kScreenHeight - height), width, height);
     
-    
 }
 
 -(void)setMiddleClickBlock:(void (^)(BOOL))middleClickBlock {
     self.middleView.middleClickBlock = middleClickBlock;
 }
-
-
 
 - (void)layoutSubviews{
     [super layoutSubviews];
@@ -77,11 +74,9 @@
     CGFloat btnw = self.width / (count + 1);
     CGFloat btnh = self.height;
     CGFloat btnY = 5;
-    
     NSInteger index = 0;
     for (UIView *subView in subViews) {
         if ([subView isKindOfClass:NSClassFromString(@"UITabBarButton")]) {
-            
             if (index == count / 2) {
                 index ++;
             }
@@ -90,16 +85,11 @@
             index ++;
         }
     }
-    
     self.middleView.centerX = self.frame.size.width * 0.5;
     self.middleView.y = self.height - self.middleView.height;
-    
 }
 
-
-// 转换点击的作用于 让中间按钮以外的也能响应
--(BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event
-{
+-(BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event {
     
     // 设置允许交互的区域
     // 1. 转换点击在tabbar上的坐标点, 到中间按钮上
@@ -114,8 +104,7 @@
     // 4. 判定中间按钮区域之外
     if (distance > 33 && pointInMiddleBtn.y < 18) {
         return NO;
-    }
-    
+    }    
     return YES;
 }
 

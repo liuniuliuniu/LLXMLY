@@ -11,7 +11,6 @@
 #import "LLTabBar.h"
 #import "LLRemotePlayer.h"
 
-
 @interface AppDelegate ()
 
 @end
@@ -35,7 +34,6 @@
         if (isPlaying) {
             
             [[NSNotificationCenter defaultCenter]postNotificationName:@"playState" object:@(isPlaying)];
-            
             [[LLRemotePlayer shareInstance] resume];
             
         }else{
@@ -48,8 +46,6 @@
     
     self.window.rootViewController = rootVC;
     [self.window makeKeyAndVisible];
-
-    
     
     return YES;
 }

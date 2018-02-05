@@ -11,7 +11,6 @@
 
 @implementation LLModelTool
 
-
 /**
  获取表格名称
  */
@@ -42,31 +41,21 @@
         ignoreNames = [[cls new] ignoreIvarNames];
     }
     
-    
     for (int i = 0; i < outCount; i ++) {
-        
         Ivar var  = varList[i];
-        
         // 名称
         NSString *ivarName = [NSString stringWithUTF8String:ivar_getName(var)];;
         if ([[ivarName substringToIndex:1] isEqualToString:@"_"]) {
             ivarName = [ivarName substringFromIndex:1];
         }
-        
         // 类型
         NSString *ivarType = [[NSString stringWithUTF8String:ivar_getTypeEncoding(var)] stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"@\""]];
-        
         if (![ignoreNames containsObject:ivarName]) {
             [varNameType setValue:ivarType forKey:ivarName];
         }
-        
     }
-    
-    
     return varNameType;
-    
 }
-
 
 /**
  获取模型里面, 需要创建表格的所有字段/类型, 组成的数组
@@ -78,45 +67,32 @@
     [ivarNameIvarTypeDic enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
         [ivarNameIvarTypeDic setValue:rTTSt[obj] forKey:key];
     }];
-    
-    
     return ivarNameIvarTypeDic;
-    
-    
 }
-
-
 
 /**
  获取模型里面所有的字段
  */
 + (NSArray <NSString *> *)getModelIvarNames: (Class)cls {
-    
     return [[self getModelIvarNameIvarTypeDic:cls] allKeys];
-    
 }
-
 
 /**
  runtime的字段类型到sql字段类型的映射表
  */
-+ (NSDictionary *)runtimeTypeToSqlTypeDic {
-    
++ (NSDictionary *)runtimeTypeToSqlTypeDic {    
     return @{
              @"d": @"real", // double
              @"f": @"real", // float
-             
              @"i": @"integer",  // int
              @"q": @"integer", // long
              @"Q": @"integer", // long long
              @"B": @"integer", // bool
-             
              @"NSData": @"blob",
              @"NSDictionary": @"text",
              @"NSMutableDictionary": @"text",
              @"NSArray": @"text",
              @"NSMutableArray": @"text",
-             
              @"NSString": @"text",
              @"NSMutableString": @"text"
              };

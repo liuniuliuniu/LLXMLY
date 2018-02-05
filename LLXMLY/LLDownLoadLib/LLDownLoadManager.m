@@ -15,11 +15,8 @@
 
 @end
 
-
 @implementation LLDownLoadManager
 
-// 绝对的单例: 无论通过什么样的方式, 创建, 都是一个对象
-// 非绝对的单例
 static LLDownLoadManager *_shareInstance;
 + (instancetype)shareInstance {
     if (!_shareInstance) {
@@ -29,7 +26,6 @@ static LLDownLoadManager *_shareInstance;
 }
 
 + (instancetype)allocWithZone:(struct _NSZone *)zone {
-    
     if (!_shareInstance) {
         static dispatch_once_t onceToken;
         dispatch_once(&onceToken, ^{
@@ -38,7 +34,6 @@ static LLDownLoadManager *_shareInstance;
     }
     return _shareInstance;
 }
-
 
 - (NSMutableDictionary *)downLoadInfo {
     if (!_downLoadInfo) {
@@ -73,18 +68,12 @@ static LLDownLoadManager *_shareInstance;
     }];
     
     return ;
-    
-    
-    
 }
 
-- (LLDownLoader *)downLoadWithURL: (NSURL *)url
-{
+- (LLDownLoader *)downLoadWithURL: (NSURL *)url {
     
     // 文件名称  aaa/a.x  bb/a.x
-    
     NSString *md5 = [url.absoluteString md5Str];
-    
     LLDownLoader *downLoader = self.downLoadInfo[md5];
     if (downLoader) {
         [downLoader resume];
@@ -101,7 +90,6 @@ static LLDownLoadManager *_shareInstance;
     }];
     
     return downLoader;
-    
 }
 
 - (LLDownLoader *)getDownLoaderWithURL: (NSURL *)url {
@@ -111,11 +99,9 @@ static LLDownLoadManager *_shareInstance;
 }
 
 - (void)pauseWithURL: (NSURL *)url {
-    
     NSString *md5 = [url.absoluteString md5Str];
     LLDownLoader *downLoader = self.downLoadInfo[md5];
     [downLoader pause];
-    
 }
 
 - (void)cancelWithURL: (NSURL *)url {
@@ -123,6 +109,7 @@ static LLDownLoadManager *_shareInstance;
     LLDownLoader *downLoader = self.downLoadInfo[md5];
     [downLoader cancel];
 }
+
 - (void)cancelAndClearWithURL: (NSURL *)url {
     NSString *md5 = [url.absoluteString md5Str];
     LLDownLoader *downLoader = self.downLoadInfo[md5];

@@ -38,8 +38,6 @@
     return _sessionManager;
 }
 
-
-
 - (void)getTodayFireCategoryMs: (void(^)(NSArray <LLCategoryModel *>*categoryMs))resultBlock {
     
     NSString *url = [NSString stringWithFormat:@"%@%@", kBaseUrl, @"mobile/discovery/v2/rankingList/track"];
@@ -52,7 +50,6 @@
     
     [self.sessionManager request:RequestTypeGet urlStr:url parameter:param resultBlock:^(id responseObject, NSError *error) {
         
-        
         LLCategoryModel *categoryM = [[LLCategoryModel alloc] init];
         categoryM.key = @"ranking:track:scoreByTime:1:0";
         categoryM.name = @"总榜";
@@ -61,17 +58,11 @@
         if (categoryMs.count > 0) {
             [categoryMs insertObject:categoryM atIndex:0];
         }
-        
-        
         resultBlock(categoryMs);
-        
     }];
 }
 
-
 - (void)getTodayFireVoiceMsWithKey: (NSString *)key result: (void(^)(NSArray <LLDownLoadVoiceModel *>*voiceMs)) resultBlock {
-    
-    
     
     NSString *url = [NSString stringWithFormat:@"%@%@", kBaseUrl, @"mobile/discovery/v2/rankingList/track"];
     NSDictionary *param = @{
@@ -80,14 +71,10 @@
                             @"pageId": @"1",
                             @"pageSize": @"30"
                             };
-    
     [self.sessionManager request:RequestTypeGet urlStr:url parameter:param resultBlock:^(id responseObject, NSError *error) {
         
-        
         NSMutableArray <LLDownLoadVoiceModel *>*voiceyMs = [LLDownLoadVoiceModel mj_objectArrayWithKeyValuesArray:responseObject[@"list"]];
-        
         resultBlock(voiceyMs);
-        
     }];
     
     

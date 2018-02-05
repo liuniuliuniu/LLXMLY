@@ -152,57 +152,39 @@
 - (void)cancel {
     [self.session invalidateAndCancel];
     self.session = nil;
-    
-    //    self.state = XMGDownLoaderStateFailed;
 }
 
 - (void)cancelAndClearCache {
     [self cancel];
-    
-    // 删除缓存
     [LLDownLoaderFileTool removeFileAtPath:self.tmpFilePath];
-    
 }
-
-
 
 #pragma mark - 私有方法
 - (void)downLoadWithURL:(NSURL *)url offset: (long long)offset {
-    
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url cachePolicy:NSURLRequestReloadIgnoringLocalCacheData timeoutInterval:0];
     [request setValue:[NSString stringWithFormat:@"bytes=%lld-", offset] forHTTPHeaderField:@"Range"];
     NSURLSessionDataTask *task = [self.session dataTaskWithRequest:request];
     [task resume];
     self.task = task;
-    
-    
 }
 
 
 #pragma mark - NSURLSessionDataDelegate
-
-
 /**
  当发送的请求, 第一次接受到响应的时候调用,
  
  @param completionHandler 系统传递给我们的一个回调代码块, 我们可以通过这个代码块, 来告诉系统,如何处理, 接下来的数据
  */
-- (void)URLSession:(NSURLSession *)session dataTask:(NSURLSessionDataTask *)dataTask didReceiveResponse:(NSURLResponse *)response completionHandler:(void (^)(NSURLSessionResponseDisposition))completionHandler
-{
-    
+- (void)URLSession:(NSURLSession *)session dataTask:(NSURLSessionDataTask *)dataTask didReceiveResponse:(NSURLResponse *)response completionHandler:(void (^)(NSURLSessionResponseDisposition))completionHandler {
     NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *)response;
     _totalFileSize = [httpResponse.allHeaderFields[@"Content-Length"] longLongValue];
     if (httpResponse.allHeaderFields[@"Content-Range"]) {
         NSString *rangeStr = httpResponse.allHeaderFields[@"Content-Range"] ;
         _totalFileSize = [[[rangeStr componentsSeparatedByString:@"/"] lastObject] longLongValue];
-        
     }
-    
     if (self.downLoadInfo) {
         self.downLoadInfo(_totalFileSize);
     }
-    
-    
     // 判断, 本地的缓存大小 与 文件的总大小
     // 缓存大小 == 文件的总大小 下载完成 -> 移动到下载完成的文件夹
     if (_tmpFileSize == _totalFileSize) {
@@ -227,7 +209,6 @@
         // 重新发送请求  0
         [self downLoadWithURL:response.URL offset:0];
         return;
-        
     }
     
     // 继续接收数据,什么都不要处理
@@ -239,22 +220,18 @@
     completionHandler(NSURLSessionResponseAllow);
 }
 
-
 // 接收数据的时候调用
 // 100M
-- (void)URLSession:(NSURLSession *)session dataTask:(NSURLSessionDataTask *)dataTask didReceiveData:(NSData *)data
-{
+- (void)URLSession:(NSURLSession *)session dataTask:(NSURLSessionDataTask *)dataTask didReceiveData:(NSData *)data {
     // 进度 = 当前下载的大小 / 总大小
     _tmpFileSize += data.length;
     self.progress = 1.0 * _tmpFileSize / _totalFileSize;
     [self.outputStream write:data.bytes maxLength:data.length];
 }
 
-- (void)URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task didCompleteWithError:(NSError *)error
-{
+- (void)URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task didCompleteWithError:(NSError *)error {
     [self.outputStream close];
     self.outputStream = nil;
-    
     if (error == nil) {
         NSLog(@"下载完毕, 成功");
         // 移动数据  temp - > cache
@@ -272,12 +249,9 @@
             self.downLoadError();
         }
     }
-    
-    
 }
 
 #pragma mark - 懒加载
-
 - (NSURLSession *)session {
     if (!_session) {
         _session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration] delegate:self delegateQueue:[NSOperationQueue mainQueue]];
@@ -285,32 +259,21 @@
     return _session;
 }
 
-
 - (void)setState:(LLDownLoaderState)state {
     if (_state == state) {
         return;
     }
     _state = state;
-    
     if (self.downLoadStateChange) {
         self.downLoadStateChange(state);
     }
-    
-    [[NSNotificationCenter defaultCenter] postNotificationName:kDownLoadURLOrStateChangeNotification object:nil userInfo:@{
-                                                                                                                           @"downLoadURL": self.url,
-                                                                                                                           @"downLoadState": @(self.state)
-                                                                                                                           }];
-    
+    [[NSNotificationCenter defaultCenter] postNotificationName:kDownLoadURLOrStateChangeNotification object:nil userInfo:@{                                                                                                                           @"downLoadURL": self.url,                                                                                                                           @"downLoadState": @(self.state)                                                                                                                           }];
 }
-
-
-- (void)setProgress:(float)progress
-{
+- (void)setProgress:(float)progress {
     _progress = progress;
     if (self.downLoadProgress) {
         self.downLoadProgress(progress);
     }
 }
-
 
 @end

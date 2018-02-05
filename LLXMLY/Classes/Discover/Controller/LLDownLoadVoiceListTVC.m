@@ -7,14 +7,9 @@
 //
 
 #import "LLDownLoadVoiceListTVC.h"
-
 #import "LLDownLoadDataProvider.h"
 #import "LLDownLoadVoiceCellPresenter.h"
-
 #import "LLDownLoadVoiceCell.h"
-
-
-
 
 @interface LLDownLoadVoiceListTVC ()
 
@@ -38,18 +33,14 @@
             presenter.voiceM = voiceM;
             [presenters addObject:presenter];
         }
-        
         weakSelf.presenterMs = presenters;
     }];
-    
 }
-
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
    return self.presenterMs.count;
 }
-
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
@@ -62,17 +53,11 @@
     return cell;
 }
 
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     LLDownLoadVoiceCellPresenter *presenter = self.presenterMs[indexPath.row];
-    
     NSLog(@"跳转到播放器界面进行播放--%@--", presenter.voiceM.title);
-    
 }
-
-
-
 
 - (void)setPresenterMs:(NSArray<LLDownLoadVoiceCellPresenter *> *)presenterMs {
     _presenterMs = presenterMs;

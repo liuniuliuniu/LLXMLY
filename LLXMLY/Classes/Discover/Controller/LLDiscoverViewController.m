@@ -37,9 +37,7 @@
         config.segmentBarBackColor([UIColor whiteColor]).itemNormalColor([UIColor blackColor]);
     }];
     
-        // 发送网络请求
-    __weak typeof(self) weakSelf = self;
-    
+    __weak typeof(self) weakSelf = self;    
     [[LLDownLoadDataProvider shareInstance] getTodayFireCategoryMs:^(NSArray<LLCategoryModel *> *categoryMs) {
         weakSelf.categoryMs = categoryMs;
     }];

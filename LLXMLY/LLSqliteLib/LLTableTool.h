@@ -16,6 +16,4 @@
 /** 获取表格里面所有的字段 */
 + (NSArray *)getTableAllColumnNames: (NSString *)tableName uid: (NSString *)uid;
 
-
-
 @end

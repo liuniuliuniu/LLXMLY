@@ -17,7 +17,6 @@
  */
 + (instancetype)shareInstance;
 
-
 /**
  添加子控制器的block
  
@@ -26,7 +25,6 @@
  @return TabBarController
  */
 + (instancetype)tabBarControllerWithAddChildVCsBlock: (void(^)(LLTabBarController *tabBarC))addVCBlock;
-
 
 /**
  添加子控制器

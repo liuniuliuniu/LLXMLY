@@ -11,12 +11,9 @@
 typedef enum{
     RequestTypeGet,
     RequestTypePost
-    
 }RequestType;
 
-
 @interface LLSessionManager : NSObject
-
 
 - (void)setValue:(NSString *)value forHttpField:(NSString *)field;
 

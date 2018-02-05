@@ -13,7 +13,6 @@ target 'LLXMLY' do
 
 pod 'LLMusicBase/BaseClasses'
 
-
 pod 'LLSegmentBar'
 pod 'AFNetworking'
 pod 'SDWebImage'

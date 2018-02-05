@@ -13,23 +13,16 @@
 static NSString *const cellID = @"downLoadVoiceCell";
 
 + (instancetype)cellWithTableView:(UITableView *)tableView {
-    
     LLDownLoadVoiceCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
-    
     if (cell == nil) {
         cell = [[[NSBundle mainBundle] loadNibNamed:@"LLDownLoadVoiceCell" owner:nil options:nil] firstObject];
         [cell addObserver:cell forKeyPath:@"sortNumLabel.text" options:NSKeyValueObservingOptionNew context:nil];
     }
-    
     return cell;
 }
 
-
-
 - (IBAction)downLoad {
-    
     if (self.state == LLDownLoadVoiceCellStateWaitDownLoad) {
-//        NSLog(@"下载");
         if (self.downLoadBlock) {
             self.downLoadBlock();
         }
@@ -95,7 +88,6 @@ static NSString *const cellID = @"downLoadVoiceCell";
     
 }
 
-
 - (void)awakeFromNib {
     [super awakeFromNib];
     
@@ -106,14 +98,12 @@ static NSString *const cellID = @"downLoadVoiceCell";
     
 }
 
--(void)dealloc
-{
+-(void)dealloc {
     [self removeObserver:self forKeyPath:@"sortNumLabel.text"];
 }
 
 
--(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context
-{
+-(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context {
     if ([keyPath isEqualToString:@"sortNumLabel.text"]) {
         NSInteger sort = [change[NSKeyValueChangeNewKey] integerValue];
         if (sort == 1) {
@@ -126,7 +116,6 @@ static NSString *const cellID = @"downLoadVoiceCell";
             self.sortNumLabel.textColor = [UIColor grayColor];
         }
         return;
-    }
-    
+    }    
 }
 @end

@@ -39,20 +39,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    
     // 设置tabbar
     [self setUpTabbar];
-    
-    
-    
-    
 }
 
 - (void)setUpTabbar {
     [self setValue:[[LLTabBar alloc] init] forKey:@"tabBar"];
 }
-
 
 /**
  *  根据参数, 创建并添加对应的子控制器
@@ -74,18 +67,14 @@
     }
 }
 
-
-
 - (void)setSelectedIndex:(NSUInteger)selectedIndex{
     [super setSelectedIndex:selectedIndex];
-    
     UIViewController *vc = self.childViewControllers[selectedIndex];
+    
     if (vc.view.tag == 666) {
         vc.view.tag = 888;
-        
         LLMiddleView *middleView = [LLMiddleView middleView];
         middleView.middleClickBlock = [LLMiddleView shareInstance].middleClickBlock;
-                        
         middleView.isPlaying = [LLMiddleView shareInstance].isPlaying;
         middleView.middleImg = [LLMiddleView shareInstance].middleImg;
         CGRect frame = middleView.frame;

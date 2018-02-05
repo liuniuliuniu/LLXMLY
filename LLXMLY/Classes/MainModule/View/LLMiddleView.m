@@ -34,7 +34,6 @@ static LLMiddleView *_shareInstance;
     return _shareInstance;
 }
 
-
 + (instancetype)middleView {
     LLMiddleView *middleView = [[[NSBundle mainBundle] loadNibNamed:@"LLMiddleView" owner:nil options:nil] firstObject];
     return middleView;
@@ -44,9 +43,7 @@ static LLMiddleView *_shareInstance;
     [super awakeFromNib];
     self.middleImageView.layer.masksToBounds = YES;
     self.middleImg = self.middleImageView.image;
-    // 移除动画
     [self.middleImageView.layer removeAnimationForKey:@"playAnnimation"];
-    
     CABasicAnimation *basicAnnimation = [[CABasicAnimation alloc]init];
     basicAnnimation.keyPath = @"transform.rotation.z";
     
@@ -61,16 +58,13 @@ static LLMiddleView *_shareInstance;
     basicAnnimation.removedOnCompletion = NO;
     
     [self.middleImageView.layer addAnimation:basicAnnimation forKey:@"playAnnimation"];
-    // 暂停动画
+    
     [self.middleImageView.layer pauseAnimate];
     
     [self.playBtn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
     
-    
-    // 监听播放状态的通知
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(isPlayerPlay:) name:@"playState" object:nil];
     
-    // 监听播放图片的通知
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(setPlayImage:) name:@"playImage" object:nil];
 }
 
@@ -80,15 +74,12 @@ static LLMiddleView *_shareInstance;
     self.isPlaying = isPlay;
 }
 
-
 - (void)setPlayImage:(NSNotification *)notification {
     UIImage *image = notification.object;
     self.middleImg = image;
 }
 
-
 - (void)btnClick:(UIButton *)btn {
-    
     if (self.middleClickBlock) {
         self.middleClickBlock(!self.isPlaying);
     }
